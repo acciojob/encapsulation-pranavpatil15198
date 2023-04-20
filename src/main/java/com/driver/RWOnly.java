@@ -1,11 +1,15 @@
 package com.driver;
 
-public class Main {
+public class RWOnly {
+    private String name;
+    public String getName() {
+        return name;
+    }
 
-
-    public static void main(String[] args) {
-        RWOnly obj = new RWOnly();
-        obj.setName("Pranav Patil");
-        System.out.println(obj.getName());
+    // Method 2 - Setter
+    public void setName(String N)
+    {
+        // This keyword refers to current instance itself
+        this.name = N;
     }
 }
